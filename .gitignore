@@ -1,0 +1,8 @@
+/bin/
+/app
+/app.exe
+*.exe
+.idea/
+config/.env
+data/corpus/.kb_faq_state.json
+data/sessions/

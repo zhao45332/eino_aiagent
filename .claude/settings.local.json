@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.cloudwego.io)",
+      "Bash(go env *)",
+      "Bash(gofmt *)"
+    ]
+  }
+}
