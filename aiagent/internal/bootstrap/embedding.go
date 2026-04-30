@@ -9,8 +9,13 @@ import (
 
 	embedopenai "github.com/cloudwego/eino-ext/components/embedding/openai"
 
+<<<<<<< HEAD
 	"aiagent/internal/config"
 	"aiagent/internal/model"
+=======
+	"aiagent/internal/components/model"
+	"aiagent/internal/config"
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 )
 
 // NewOpenAIEmbedder 使用与对话模型相同来源的 OpenAI 兼容 Embedding API（需与 [config.Config.EmbeddingDim] 及 Milvus 集合维度一致）。

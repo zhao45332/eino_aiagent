@@ -7,8 +7,13 @@ import (
 
 	"github.com/cloudwego/eino/adk"
 
+<<<<<<< HEAD
 	"aiagent/internal/config"
 	"aiagent/internal/tool"
+=======
+	"aiagent/internal/components/tool"
+	"aiagent/internal/config"
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 )
 
 // 环境变量 AGENT_MODE（不区分大小写）：

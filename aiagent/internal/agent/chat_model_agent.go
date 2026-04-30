@@ -11,9 +11,15 @@ import (
 	ecompose "github.com/cloudwego/eino/compose"
 
 	"aiagent/internal/bootstrap"
+<<<<<<< HEAD
 	"aiagent/internal/config"
 	"aiagent/internal/prompt"
 	"aiagent/internal/tool"
+=======
+	"aiagent/internal/components/prompt"
+	"aiagent/internal/components/tool"
+	"aiagent/internal/config"
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 )
 
 // NewSupervisorCustomerAgent 创建主管 + 子技能（各绑部分工具），由主管通过 transfer_to_agent 分流。
@@ -93,6 +99,7 @@ func NewSupervisorCustomerAgent(ctx context.Context, c *config.Config, kb tool.K
 	if err != nil {
 		return nil, err
 	}
+<<<<<<< HEAD
 	mathTools := []etool.BaseTool{calcT}
 	mathAgent, err := adk.NewChatModelAgent(ctx, &adk.ChatModelAgentConfig{
 		Name:        SkillMathName,
@@ -100,6 +107,14 @@ func NewSupervisorCustomerAgent(ctx context.Context, c *config.Config, kb tool.K
 		Instruction: prompt.SkillMathInstruction,
 		Model:       cm,
 		ToolsConfig: adk.ToolsConfig{ToolsNodeConfig: ecompose.ToolsNodeConfig{Tools: mathTools}},
+=======
+	mathAgent, err := adk.NewChatModelAgent(ctx, &adk.ChatModelAgentConfig{
+		Name:        SkillMathName,
+		Description: "两个数的加法等简单计算。",
+		Instruction: prompt.SkillMathInstruction,
+		Model:       cm,
+		ToolsConfig: adk.ToolsConfig{ToolsNodeConfig: ecompose.ToolsNodeConfig{Tools: []etool.BaseTool{calcT}}},
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 	})
 	if err != nil {
 		return nil, fmt.Errorf("skill-math: %w", err)

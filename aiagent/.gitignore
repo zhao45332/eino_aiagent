@@ -1,8 +1,11 @@
 /bin/
 /app
 /app.exe
+<<<<<<< HEAD
 *.exe
 .idea/
+=======
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 config/.env
 data/corpus/.kb_faq_state.json
 data/sessions/

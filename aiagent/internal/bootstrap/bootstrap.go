@@ -10,8 +10,13 @@ import (
 	"github.com/cloudwego/eino-ext/components/model/ark"
 	emodel "github.com/cloudwego/eino/components/model"
 
+<<<<<<< HEAD
 	"aiagent/internal/config"
 	"aiagent/internal/model"
+=======
+	"aiagent/internal/components/model"
+	"aiagent/internal/config"
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 )
 
 // NewChatModel 根据 [config.Config.ModelType] 创建 ChatModel：openai（含智谱等 OpenAI 兼容网关）或 ark。

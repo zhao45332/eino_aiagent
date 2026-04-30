@@ -1,5 +1,6 @@
 # aiagent
 
+<<<<<<< HEAD
 基于 [CloudWeGo Eino ADK](https://github.com/cloudwego/eino) 的智能客服示例。默认 **Supervisor（主管代理）** + 多个 **技能子 ChatModelAgent**，由主管通过 `transfer_to_agent` 分流；各技能仅挂载部分工具（`search_knowledge` / `get_weather` / `get_geolocation` / `calculator`）。设置 **`AGENT_MODE=faq_only`** 时可改为**单个** FAQ Agent（仅 `search_knowledge` + `calculator`，无主管与天气/定位）。向量检索装配见 `internal/rag`，交互式 Runner 见 `internal/interactive`。
 
 ## 目录说明（分层）
@@ -20,6 +21,9 @@
 | `internal/vectorstore/` | Milvus 集合 schema、写入与向量检索 |
 
 原先中间的 `internal/components/` 已去掉：**prompt / tool / model / retriever** 一律提升到 `internal/` 一级，路径即语义，避免「什么都往里扔的 components」。
+=======
+基于 [CloudWeGo Eino ADK](https://github.com/cloudwego/eino) 的智能客服示例。默认 **Supervisor（主管代理）** + 多个 **技能子 ChatModelAgent**，由主管通过 `transfer_to_agent` 分流；各技能仅挂载部分工具（`search_knowledge` / `get_weather` / `get_geolocation` / `calculator`）。设置 **`AGENT_MODE=faq_only`** 时可改为**单个** FAQ Agent（仅 `search_knowledge` + `calculator`，无主管与天气/定位子代理）。
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 
 ## 运行
 

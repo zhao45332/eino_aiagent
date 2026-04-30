@@ -11,9 +11,15 @@ import (
 	ecompose "github.com/cloudwego/eino/compose"
 
 	"aiagent/internal/bootstrap"
+<<<<<<< HEAD
 	"aiagent/internal/config"
 	"aiagent/internal/prompt"
 	"aiagent/internal/tool"
+=======
+	"aiagent/internal/components/prompt"
+	"aiagent/internal/components/tool"
+	"aiagent/internal/config"
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 )
 
 // NewFAQOnlyAgent 定义agent
@@ -22,8 +28,12 @@ func NewFAQOnlyAgent(ctx context.Context, c *config.Config, kb tool.KnowledgeRet
 	if err != nil {
 		return nil, err
 	}
+<<<<<<< HEAD
 
 	tools := make([]etool.BaseTool, 0, 4)
+=======
+	tools := make([]etool.BaseTool, 0, 2)
+>>>>>>> 76ebdb424921ecf0d37df06b0dc69867613fb3fc
 	if kb != nil {
 		kbT, errKB := tool.NewKnowledgeSearchTool(kb)
 		if errKB != nil {
